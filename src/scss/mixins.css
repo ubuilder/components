@@ -1,0 +1,24 @@
+@define-mixin font-size-xs {
+  line-height: var(--size-xs);
+  font-size: calc(var(--size-xs) * 0.8);
+}
+@define-mixin font-size-sm {
+  line-height: var(--size-sm);
+  font-size: calc(var(--size-sm) * 0.8);
+}
+@define-mixin font-size-md {
+  line-height: var(--size-md);
+  font-size: calc(var(--size-md) * 0.8);
+}
+@define-mixin font-size-lg {
+  line-height: var(--size-lg);
+  font-size: calc(var(--size-lg) * 0.8);
+}
+@define-mixin font-size-xl {
+  line-height: var(--size-xl);
+  font-size: calc(var(--size-xl) * 0.8);
+}
+@define-mixin font-size-2xl {
+  line-height: var(--size-2xl);
+  font-size: calc(var(--size-2xl) * 0.8);
+}

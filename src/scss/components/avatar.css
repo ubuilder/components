@@ -1,0 +1,62 @@
+
+  [u-avatar-size=xs] {
+    @apply text-xs w-4 h-4;
+    /* --avatar-size: var(--size-xs); */
+  }
+  [u-avatar-size=sm] {
+    @apply text-sm w-6 h-6;
+    /* --avatar-size: var(--size-sm); */
+  }
+  [u-avatar-size=md] {
+    @apply w-8 h-8;
+
+    /* --avatar-size: var(--size-md); */
+  }
+  [u-avatar-size=lg] {
+    @apply text-lg w-12 h-12;
+
+    /* --avatar-size: var(--size-lg); */
+  }
+  [u-avatar-size=xl] {
+    @apply text-xl w-16 h-16;
+
+    /* --avatar-size: var(--size-xl); */
+  }
+  
+  [u-avatar-color=primary] {
+    @apply bg-primary-500;
+  }
+  [u-avatar-color=secondary] {
+    @apply bg-secondary-500;
+  }
+  [u-avatar-color=success] {
+    @apply bg-success-500;
+  }
+  [u-avatar-color=info] {
+    @apply bg-info-500;
+  }
+  [u-avatar-color=warning] {
+    @apply bg-warning-500;
+  }
+  [u-avatar-color=error] {
+    @apply bg-error-500;
+  }
+  [u-avatar-color=dark] {
+    @apply bg-gray-700;
+  }
+  [u-avatar-color=light] {
+    @apply bg-gray-300;
+  }
+  
+  [u-avatar] {
+    @apply inline-flex items-center justify-center rounded-full text-gray-900 uppercase;   
+  }
+
+  [u-avatar-image]{
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+  }
+  
+  /* #endregion */
+  

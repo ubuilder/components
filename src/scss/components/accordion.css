@@ -1,0 +1,35 @@
+[u-accordions] {
+  @apply flex flex-col border border-gray-300;
+}
+
+.dark [u-accordions] {
+  @apply border-gray-700;
+}
+
+
+[u-accordion] {
+  @apply border-b border-gray-300;
+}
+.dark [u-accordion] {
+  @apply  border-gray-700;
+}
+
+  [u-accordion-header] {
+    @apply py-sm px-md text-lg cursor-pointer flex items-center justify-between;
+  }
+  [u-accordion-header=open] {
+    @apply font-bold;
+  }
+  
+  [u-accordion-content] {
+    @apply hidden;
+  }
+  
+  [u-accordion-content-open] {
+    @apply block;
+  }
+  
+  [u-accordion-body] {
+    @apply p-sm;
+  }
+  

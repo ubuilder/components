@@ -1,0 +1,42 @@
+
+  /* #region Icon */
+  [u-icon] {
+    --icon-size: var(--size-md);
+  
+    stroke-width: 1px;
+    width: var(--icon-size);
+    height: var(--icon-size);
+  }
+  
+  [u-icon-size=xxs] {
+    --icon-size: var(--size-xxs);
+  }
+  [u-icon-size=xs] {
+    --icon-size: var(--size-xs);
+  }
+  [u-icon-size=sm] {
+    --icon-size: var(--size-sm);
+  }
+  [u-icon-size=md] {
+    --icon-size: var(--size-md);
+  }
+  [u-icon-size=lg] {
+    --icon-size: var(--size-lg);
+  }
+  [u-icon-size=xl] {
+    --icon-size: var(--size-xl);
+  }
+  [u-icon-size="2xl"] {
+    --icon-size: var(--size-2xl);
+  }
+  [u-icon-size="3xl"] {
+    --icon-size: var(--size-3xl);
+  }
+  [u-icon-size="5xl"] {
+    --icon-size: var(--size-5xl);
+  }
+  [u-icon-size="6xl"] {
+    --icon-size: var(--size-6xl);
+  }
+  /* #endregion */
+  

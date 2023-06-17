@@ -7,6 +7,7 @@ import {
   writeFileSync,
 } from "fs";
 import { renderTemplate } from "@ulibs/router";
+import * as sass from 'sass'
 
 const files = readdirSync("./src/docs/pages");
 
@@ -38,4 +39,6 @@ for (let file of files) {
   }
 }
 
-cpSync("./src/styles.css", "./build/styles.css");
+// const css = sass.compile('./src/scss/index.scss', {})
+
+// writeFileSync('./build/styles.css', css.css)

@@ -1,0 +1,38 @@
+
+  /* #region divider */
+  
+  [u-divider-color=primary] {
+    --divider-bg: var(--color-primary-500);
+  }
+  [u-divider-color=secondary] {
+    --divider-bg: var(--color-secondary-500);
+  }
+  [u-divider-color=success] {
+    --divider-bg: var(--color-success-500);
+  }
+  [u-divider-color=info] {
+    --divider-bg: var(--color-info-500);
+  }
+  [u-divider-color=warning] {
+    --divider-bg: var(--color-warning-500);
+  }
+  [u-divider-color=error] {
+    --divider-bg: var(--color-error-500);
+  }
+  [u-divider-color=dark] {
+    --divider-bg: var(--color-dark-300);
+  }
+  [u-divider-color=light] {
+    --divider-bg: var(--color-light-300);
+  }
+  
+  [u-divider] {
+    border: none;
+    height: 1px;
+    margin: var(--size-sm) 0;
+    background-color: var(--divider-bg);
+  }
+  
+  /* #endregion */
+  
+  

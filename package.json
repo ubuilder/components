@@ -29,6 +29,12 @@
     "rollup": "^3.23.0"
   },
   "dependencies": {
-    "@ulibs/router": "^0.0.2"
+    "@ulibs/router": "^0.0.2",
+    "postcss": "^8.4.24",
+    "postcss-import": "^15.1.0",
+    "postcss-insert": "^1.0.0",
+    "postcss-mixins": "^9.0.4",
+    "sass": "^1.63.4",
+    "tailwindcss": "^3.3.2"
   }
 }

@@ -1,0 +1,23 @@
+/* @import './variables.scss.css'; */
+/* @tailwind base; */
+/* @tailwind utilities; */
+/* @tailwind components; */
+
+@import './mixins.css';
+/*  */
+@import './base.css';
+
+@import './components/accordion.css';
+@import './components/avatar.css';
+@import './components/badge.css';
+@import './components/breadcrumb.css';
+@import './components/button.css';
+@import './components/card.css';
+@import './components/divider.css';
+@import './components/icon.css';
+@import './components/input.css';
+@import './components/modal.css';
+@import './components/progress.css';
+@import './components/spinner.css';
+@import './components/table.css';
+@import './components/view.css';
