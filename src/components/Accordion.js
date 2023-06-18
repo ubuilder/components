@@ -3,15 +3,10 @@ import { View } from "./View.js";
 
 let id = 0;
 export const Accordions = Base(($props, slots) => {
-  const { component = "accordions", persistent = false, ...restProps } = $props;
+  $props.component = 'accordions'
+  $props.persistent = $props.persistent ?? false
 
-  const props = {
-    ...restProps,
-    component,
-    persistent,
-  };
-
-  return View(props, slots);
+  return View($props, slots);
 });
 
 export const Accordion = Base(($props, slots) => {

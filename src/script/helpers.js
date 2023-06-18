@@ -85,3 +85,10 @@ export function writable(value) {
     },
   };
 }
+
+export function addMethods($el, $methods) {
+  for (let key in $methods) {
+    $el["$" + key] = $methods[key];
+  }
+  return $el;
+}

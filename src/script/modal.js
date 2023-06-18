@@ -1,4 +1,11 @@
-import { getAttr, queryAttr, register, removeAttr, setAttr } from "./helpers";
+import {
+  addMethods,
+  getAttr,
+  queryAttr,
+  register,
+  removeAttr,
+  setAttr,
+} from "./helpers";
 
 export function Modal($el) {
   // close on backdrop click
@@ -16,17 +23,18 @@ export function Modal($el) {
     //   event.stop_propagation();
     // };
   });
+
+  return addMethods($el, {
+    open() {
+      setAttr($el, "u-modal-open");
+    },
+    close() {
+      const persistent = getAttr($el, "persistent");
+      if (persistent) return;
+
+      removeAttr($el, "u-modal-open");
+    },
+  });
 }
-
-Modal.close = (el) => {
-  const persistent = getAttr(el, "persistent");
-  if (persistent) return;
-
-  removeAttr(el, "u-modal-open");
-};
-
-Modal.open = (el) => {
-  setAttr(el, "u-modal-open");
-};
 
 register("u-modal", Modal);
