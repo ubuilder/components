@@ -1,9 +1,14 @@
-import { Button, Input, ModalBody } from "../../components";
-import { Modal } from "../../script";
-import { DocPage } from "../components/DocPage";
+import {
+  Button,
+  Modal,
+  Input,
+  ModalBody,
+  View,
+} from "../../components/index.js";
+import { DocPage } from "../components/DocPage.js";
 
 export default function () {
-  return DocPage([
+  return DocPage({ name: "Action" }, [
     Button(
       { m: "xl", color: "primary", "u-on-click": "my-modal.open" },
       "Toggle Modal"
@@ -12,10 +17,36 @@ export default function () {
       ModalBody([
         Input({ "u-bind-value": "name", label: "name" }),
         Input({ "u-bind-value": "username", label: "username" }),
-        Button({ "u-on-click": "my-modal.close", color: "error" }, "Close"),
-        Button({ "u-on-click": "my-modal.close", color: "primary" }, "Login"),
+        Button(
+          {
+            "u-on-click": "my-modal.close|$log(closing...)",
+            color: "error",
+          },
+          "Close"
+        ),
+        Button(
+          {
+            "u-on-click": "my-modal.close|$login|$log(login)",
+            color: "primary",
+          },
+          "Login"
+        ),
       ]),
     ]),
+
+    View(
+      { tag: "script" },
+      `    
+    function $log(...params) {
+        console.log('log: ', ...params)
+    }
+
+    function $login(...params) {
+        console.log('login: ', params[0])
+    }
+
+    `
+    ),
   ]);
 }
 // {
